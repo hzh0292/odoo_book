@@ -1,0 +1,392 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第一章 环境搭建 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter2/" />
+    
+    
+    <link rel="prev" href="../SECTION1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../SECTION1.html">
+            
+                <a href="../SECTION1.html">
+            
+                    
+                    第一部分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章 环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    第二章 第一个模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    第三章 字段类型和基本视图类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    第四章 搜索与继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    第五章 API简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    第六章 重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第一章 环境搭建</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x4E00;&#x7AE0;-&#x73AF;&#x5883;&#x642D;&#x5EFA;">&#x7B2C;&#x4E00;&#x7AE0; &#x73AF;&#x5883;&#x642D;&#x5EFA;</h1>
+<h2 id="&#x5173;&#x4E8E;odoo">&#x5173;&#x4E8E;Odoo</h2>
+<p>&#x7B14;&#x8005;&#x63A5;&#x89E6;odoo&#x5DF2;&#x7ECF;&#x6709;&#x56DB;&#x4E94;&#x5E74;&#x7684;&#x65F6;&#x95F4;&#x4E86;&#xFF0C;&#x4ECE;&#x6700;&#x521D;&#x7684;OpenERP 7&#x5230;&#x73B0;&#x5728;&#x7684;odoo 12&#xFF0C;&#x4E2D;&#x95F4;&#x6709;&#x8FC7;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x7684;&#x8FDC;&#x79BB;&#xFF0C;&#x73B0;&#x5728;&#x673A;&#x7F18;&#x5DE7;&#x5408;&#x4E0B;&#x53C8;&#x91CD;&#x65B0;&#x51FA;&#x53D1;&#x3002;Odoo&#x662F;&#x4E00;&#x4E2A;&#x4F18;&#x79C0;&#x7684;&#x5F00;&#x6E90;ERP&#x6846;&#x67B6;&#xFF0C;&#x6709;&#x8FD9;&#x8BF8;&#x591A;&#x7684;&#x4F18;&#x70B9;&#xFF0C;&#x90E8;&#x7F72;&#x7B80;&#x5355;&#x3001;&#x5F00;&#x53D1;&#x8FC5;&#x901F;&#x3001;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x597D;&#xFF0C;&#x5F53;&#x7136;&#x4E00;&#x4E2A;&#x4E8B;&#x7269;&#x6709;&#x6709;&#x70B9;&#x5C31;&#x5FC5;&#x5B9A;&#x4F1A;&#x6709;&#x7F3A;&#x70B9;&#xFF0C;&#x7F3A;&#x70B9;&#x5C31;&#x662F;&#x8BED;&#x8A00;&#x5C0F;&#x4F17;(Python&#xFF1A;&#x602A;&#x6211;&#x54AF;&#xFF1F;)&#xFF0C;&#x8D44;&#x6599;&#x5947;&#x5C11;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#x4E5F;&#x662F;&#x6700;&#x81F4;&#x547D;&#x7684;&#x4E00;&#x70B9;&#x5C31;&#x662F;&#x5B83;&#x771F;&#x7684;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#xFF0C;&#x867D;&#x7136;&#x6709;&#x4F17;&#x591A;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x6A21;&#x5757;&#x52A0;&#x6210;&#xFF0C;&#x4F46;&#x662F;&#x771F;&#x7684;&#x65E0;&#x6CD5;&#x505A;&#x5230;&#x5F00;&#x7BB1;&#x5373;&#x7528;&#xFF0C;&#x8FD9;&#x4E5F;&#x5C31;&#x5BF9;&#x5B83;&#x7684;&#x6F5C;&#x5728;&#x4F7F;&#x7528;&#x8005;&#x9020;&#x6210;&#x4E86;&#x95E8;&#x6977;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x7F8E;&#x597D;&#xFF0C;&#x50CF;&#x7528;&#x8D77;&#x6765;&#x5374;&#x4E0D;&#x5F97;&#x4E0D;&#x627E;&#x4E13;&#x4E1A;&#x7684;&#x516C;&#x53F8;&#x5B9E;&#x65BD;&#x6216;&#x8005;&#x62DB;&#x4E00;&#x4E2A;&#x61C2;&#x884C;&#x7684;&#x4EBA;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x3002;</p>
+<p>Odoo&#x7684;&#x56FD;&#x5185;&#x5E02;&#x573A;&#xFF0C;&#x76EE;&#x524D;&#xFF08;2019&#xFF09;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x9886;&#x822A;&#x4EBA;&#xFF0C;&#x6D6A;&#x6F6E;&#x96C6;&#x56E2;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BF9;&#x56FD;&#x5185;&#x7684;&#x751F;&#x6001;&#x5E26;&#x4E86;&#x4E00;&#x4E9B;&#x79EF;&#x6781;&#x7684;&#x5F71;&#x54CD;&#x3002;&#x4F46;&#x662F;&#x5C31;&#x76EE;&#x524D;&#x7684;&#x6001;&#x52BF;&#x6765;&#x770B;&#xFF0C;&#x6D6A;&#x6F6E;&#x7684;&#x601D;&#x8DEF;&#x4E5F;&#x662F;&#x505A;SAAS&#x6A21;&#x5F0F;&#x3002;&#x4E2A;&#x4EBA;&#x5E76;&#x4E0D;&#x770B;&#x597D;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#xFF0C;Odoo&#x793E;&#x533A;&#x7248;&#x867D;&#x7136;&#x514D;&#x8D39;&#xFF0C;&#x4F46;&#x5B9E;&#x65BD;&#x8D77;&#x6765;&#x5374;&#x9700;&#x8981;&#x76F8;&#x5F53;&#x7684;&#x6301;&#x7EED;&#x7684;&#x6295;&#x5165;&#xFF0C;&#x8FD9;&#x5BF9;&#x4F01;&#x4E1A;&#x7684;&#x957F;&#x8FDC;&#x6765;&#x8BF4;&#x5E76;&#x4E0D;&#x7B97;&#x662F;&#x4E00;&#x4E2A;&#x6027;&#x4EF7;&#x6BD4;&#x9AD8;&#x7684;&#x9009;&#x62E9;&#x3002;&#x7B14;&#x8005;&#x66FE;&#x7ECF;&#x4F9B;&#x804C;&#x7684;&#x4E00;&#x5BB6;&#x4F01;&#x4E1A;&#xFF0C;&#x5728;2014&#x5E74;&#x5F00;&#x59CB;&#x4F7F;&#x7528;Odoo&#xFF0C;&#x540E;&#x6765;&#x56E0;&#x4E3A;&#x6280;&#x672F;&#x7684;&#x652F;&#x6301;&#x4E0D;&#x5230;&#x4F4D;&#xFF08;&#x4E5F;&#x8BB8;&#x6709;&#x8D44;&#x91D1;&#x5C42;&#x9762;&#x7684;&#x539F;&#x56E0;&#xFF09;&#xFF0C;&#x73B0;&#x5728;&#x636E;&#x8BF4;&#x5DF2;&#x7ECF;&#x9000;&#x56DE;&#x5230;&#x91D1;&#x8776;&#x7528;&#x53CB;&#x7684;&#x8F6F;&#x4EF6;&#x4E86;&#x3002;&#x5BF9;&#x4E8E;&#x56FD;&#x5185;&#x4E00;&#x4E9B;&#x9760;Odoo&#x5B9E;&#x65BD;&#x751F;&#x5B58;&#x7684;&#x4F01;&#x4E1A;&#x6765;&#x8BF4;&#xFF0C;&#x4E2A;&#x4EBA;&#x4E5F;&#x6301;&#x60B2;&#x89C2;&#x6A21;&#x5F0F;&#xFF0C;&#x5176;&#x5B9E;Odoo&#x5165;&#x534E;&#x5DF2;&#x7ECF;&#x5E74;&#x5934;&#x4E0D;&#x5C11;&#x4E86;&#xFF0C;&#x4ECE;6.0&#xFF08;2012&#xFF09;&#x5F00;&#x59CB;&#x56FD;&#x5185;&#x5C31;&#x6709;&#x5148;&#x9A71;&#x5F00;&#x59CB;&#x505A;&#x8FD9;&#x5757;&#x7684;&#x5E02;&#x573A;&#xFF0C;&#x73B0;&#x5728;7&#x5E74;&#x5DF2;&#x7ECF;&#x8FC7;&#x53BB;&#x4E86;&#xFF0C;&#x4F9D;&#x65E7;&#x6CA1;&#x6709;&#x770B;&#x5230;&#x4E00;&#x5BB6;&#x80FD;&#x591F;&#x58EE;&#x5927;&#x7684;&#x4E13;&#x4E1A;&#x5B9E;&#x65BD;&#x516C;&#x53F8;&#x3002;&#x8FD9;&#x91CC;&#x8FB9;&#x9700;&#x8981;&#x601D;&#x8003;&#x7684;&#x4E1C;&#x897F;&#x633A;&#x591A;&#xFF0C;&#x5F53;&#x5B98;&#x65B9;&#x90FD;&#x5403;&#x4E0D;&#x9971;(&#x751A;&#x81F3;&#x8DD1;&#x8FC7;&#x6765;&#x8DDF;&#x4EE3;&#x7406;&#x5546;&#x62A2;&#x996D;&#x5403;)&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5904;&#x5728;&#x4E0B;&#x6E38;&#x7684;&#x516C;&#x53F8;&#x5C31;&#x66F4;&#x96BE;&#x8BF4;&#x6D3B;&#x5F97;&#x7F8E;&#x597D;&#x4E86;&#x3002;</p>
+<p>&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#xFF0C;Odoo&#x6700;&#x597D;&#x7684;&#x4F7F;&#x7528;&#x6A21;&#x5F0F;&#xFF0C;&#x662F;&#x516C;&#x53F8;&#x6216;&#x8005;&#x96C6;&#x56E2;&#x5185;&#x90E8;&#xFF0C;&#x7531;IT&#x56E2;&#x961F;&#x8FDB;&#x884C;&#x652F;&#x6301;&#x5F00;&#x53D1;&#xFF0C;&#x7136;&#x540E;&#x4E0D;&#x65AD;&#x8FED;&#x4EE3;&#xFF0C;&#x5185;&#x5316;&#x6210;&#x81EA;&#x5DF1;&#x516C;&#x53F8;&#x7684;&#x5185;&#x90E8;&#x4E00;&#x5957;ERP&#x7CFB;&#x7EDF;&#x662F;&#x6700;&#x5408;&#x9002;&#x7684;&#x3002;IT&#x56E2;&#x961F;&#x61C2;&#x6280;&#x672F;&#xFF0C;&#x4EA7;&#x54C1;&#x56E2;&#x961F;&#x4F18;&#x5316;&#x9700;&#x6C42;&#xFF0C;&#x518D;&#x7ECF;&#x8FC7;&#x6301;&#x7EED;&#x8FED;&#x4EE3;&#x548C;&#x4F18;&#x5316;&#xFF0C;&#x6700;&#x7EC8;&#x80FD;&#x591F;&#x6210;&#x4E3A;&#x4E00;&#x5957;&#x4E0D;&#x9519;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x56E0;&#x4E3A;IT&#x56E2;&#x961F;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x9700;&#x8981;&#x6295;&#x5165;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x80FD;&#x5C06;&#x6210;&#x672C;&#x644A;&#x5E73;&#xFF0C;&#x63D0;&#x9AD8;&#x8F6F;&#x4EF6;&#x4F7F;&#x7528;&#x7684;&#x6027;&#x4EF7;&#x6BD4;&#x3002;&#x672C;&#x7CFB;&#x5217;&#x6559;&#x7A0B;&#x4E5F;&#x662F;&#x4ECE;&#x6280;&#x672F;&#x5C42;&#x9762;&#x51FA;&#x53D1;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x591A;&#x7684;&#x4EBA;&#x80FD;&#x591F;&#x4E86;&#x89E3;&#x5230;&#x8FD9;&#x5957;&#x7CFB;&#x7EDF;&#x7684;&#x67B6;&#x6784;&#xFF0C;&#x4ECE;&#x4E2D;&#x5B66;&#x5230;&#x4E00;&#x4E9B;&#x4E0D;&#x9519;&#x7684;&#x601D;&#x8DEF;&#xFF0C;&#x800C;&#x5BF9;&#x4E8E;&#x5546;&#x4E1A;&#x5316;&#x5C42;&#x9762;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6211;&#x53EA;&#x80FD;&#x8BF4;&#xFF0C;&#x5076;&#x5C14;&#x517C;&#x4E2A;&#x804C;&#x4E5F;&#x662F;&#x4E0D;&#x9519;&#x7684;&#x3002;</p>
+<h2 id="&#x73AF;&#x5883;&#x7684;&#x642D;&#x5EFA;">&#x73AF;&#x5883;&#x7684;&#x642D;&#x5EFA;</h2>
+<p>Odoo&#x7684;&#x73AF;&#x5883;&#x642D;&#x5EFA;&#x65B9;&#x5F0F;&#x591A;&#x79CD;&#x591A;&#x6837;&#xFF0C;&#x6309;&#x65B9;&#x5F0F;&#x5212;&#x5206;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x6E90;&#x7801;&#x5B89;&#x88C5;&#x548C;&#x5B89;&#x88C5;&#x5305;&#x5B89;&#x88C5;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x3002; &#x6E90;&#x7801;&#x5B89;&#x88C5;&#x7684;&#x65B9;&#x5F0F;&#x76F8;&#x5BF9;&#x6BD4;&#x8F83;&#x7E41;&#x7410;&#xFF0C;&#x9002;&#x5408;&#x4E8E;&#x559C;&#x6B22;&#x81EA;&#x5DF1;&#x52A8;&#x624B;&#x540C;&#x5B66;&#x3002;&#x5B89;&#x88C5;&#x5305;&#x5B89;&#x88C5;&#x7684;&#x65B9;&#x5F0F;&#x6BD4;&#x8F83;&#x7B80;&#x6D01;&#xFF0C;&#x9002;&#x5408;&#x4E8E;&#x559C;&#x6B22;&#x50BB;&#x74DC;&#x5F0F;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x7684;&#x540C;&#x5B66;&#x3002;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x6CA1;&#x6709;&#x4F18;&#x52A3;&#x4E4B;&#x5206;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x7684;&#x5FC3;&#x60C5;&#x3002;&#x4E0B;&#x9762;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x8FD9;&#x4E24;&#x79CD;&#x5B89;&#x88C5;&#x65B9;&#x5F0F;&#x3002;(&#x56E0;&#x4E3A;windows&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x6BD4;&#x8F83;&#x5C11;&#xFF0C;&#x672C;&#x4E66;&#x6240;&#x6709;&#x7684;&#x5F00;&#x53D1;&#x548C;&#x90E8;&#x7F72;&#x573A;&#x666F;&#x5747;&#x662F;&#x5728;Linux&#x4E0B;&#x5B8C;&#x6210;&#xFF0C;&#x559C;&#x6B22;&#x4F7F;&#x7528;windows&#x548C;mac&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x5230;&#x7F51;&#x7EDC;&#x4E0A;&#x641C;&#x7D22;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5B8C;&#x6210;&#x5B89;&#x88C5;&#x540E;&#x7EE7;&#x7EED;&#x9605;&#x8BFB;)</p>
+<h3 id="&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B89;&#x88C5;">&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B89;&#x88C5;</h3>
+<p>Odoo&#x4F7F;&#x7528;&#x7684;&#x662F;Postgresql&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x6B63;&#x5F0F;&#x5F00;&#x59CB;&#x5B89;&#x88C5;&#x4E4B;&#x524D;&#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;&#x597D;&#x6570;&#x636E;&#x5E93;&#x3002;&#x4F7F;&#x7528;&#x5B89;&#x88C5;&#x5305;&#x5B89;&#x88C5;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x56E0;&#x4E3A;&#x5B89;&#x88C5;&#x5305;&#x901A;&#x5E38;&#x4F1A;&#x81EA;&#x52A8;&#x628A;&#x6570;&#x636E;&#x5E93;&#x5B89;&#x88C5;&#x597D;&#x3002;</p>
+<blockquote>
+<p>&#x672C;&#x4E66;&#x7684;&#x73AF;&#x5883;&#x57FA;&#x4E8E;ubuntu&#xFF0C;&#x4F7F;&#x7528;centos&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x6839;&#x636E;centos&#x7684;&#x547D;&#x4EE4;&#x81EA;&#x884C;&#x66FF;&#x6362;&#x3002;</p>
+</blockquote>
+<ol>
+<li>&#x5B89;&#x88C5;postgresql:<pre><code class="lang-sh">apt-get install postgresql
+</code></pre>
+</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x914D;&#x7F6E;odoo&#x7528;&#x6237;:<pre><code>sudo su postgres
+psql
+create user odoo with superuser
+</code></pre></li>
+<li>&#x5F00;&#x542F;&#x76D1;&#x542C;&#x6A21;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;Postgresql&#x53EA;&#x5141;&#x8BB8;&#x672C;&#x5730;&#x8BBF;&#x95EE;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C06;&#x8BE5;&#x6761;&#x4EF6;&#x653E;&#x5F00;&#x3002;&#x627E;&#x5230;/etc/postgres/9.x/main/postgresql.conf&#xFF0C;&#x5C06;listen_addresses&#x6539;&#x4E3A;*:<pre><code>listen_address=&quot;*&quot;
+</code></pre></li>
+<li>&#x7F16;&#x8F91;/etc/postgres/9.x/main/pg_hba.conf&#x6587;&#x4EF6;&#xFF0C;&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x7684;IP&#x53F7;&#x6BB5;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#xFF0C;peer,md5,trust</li>
+</ol>
+<h3 id="&#x6E90;&#x7801;&#x5B89;&#x88C5;">&#x6E90;&#x7801;&#x5B89;&#x88C5;</h3>
+<ol>
+<li>&#x4F7F;&#x7528;git&#x5C06;odoo&#x7684;&#x6E90;&#x7801;&#x514B;&#x9686;&#x5230;&#x672C;&#x5730;&#xFF0C;&#x6CE8;&#x610F;&#x9009;&#x62E9;&#x4F60;&#x8981;&#x5B89;&#x88C5;&#x7684;&#x7248;&#x672C;&#x5206;&#x652F;&#x3002;</li>
+</ol>
+<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/odoo/odoo
+</code></pre>
+<ol>
+<li>&#x4EE3;&#x7801;&#x4E0B;&#x8F7D;&#x4E0B;&#x6765;&#x4E4B;&#x540E;&#xFF0C;&#x8FDB;&#x5165;&#x6587;&#x4EF6;&#x5939;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#xFF0C;&#x7531;&#x4E8E;GFW&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x5F88;&#x591A;&#x63D2;&#x4EF6;&#x81EA;&#x52A8;&#x5B89;&#x88C5;&#x4E0D;&#x4E0A;&#xFF0C;&#x9700;&#x8981;&#x624B;&#x52A8;&#x5B89;&#x88C5;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x6E90;&#x7801;&#x5B89;&#x88C5;&#x6700;&#x4E3A;&#x7E41;&#x7410;&#x7684;&#x5730;&#x65B9;&#x3002;</li>
+</ol>
+<pre><code class="lang-sh">python setup.py install
+</code></pre>
+<ol>
+<li>&#x6240;&#x6709;&#x63D2;&#x4EF6;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5373;&#x53EF;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x7684;&#x547D;&#x4EE4;&#x542F;&#x52A8;:</li>
+</ol>
+<pre><code class="lang-python">./odoo -r odoo --addons-path=<span class="hljs-string">&apos;./addons&apos;</span>
+</code></pre>
+<h3 id="&#x5B89;&#x88C5;&#x5305;&#x5B89;&#x88C5;">&#x5B89;&#x88C5;&#x5305;&#x5B89;&#x88C5;</h3>
+<p>&#x5B89;&#x88C5;&#x5305;&#x5B89;&#x88C5;&#x76F8;&#x5BF9;&#x8981;&#x7701;&#x5FC3;&#x5F88;&#x591A;&#xFF0C;&#x4EE5;ubuntu&#x4E3A;&#x4F8B;</p>
+<ol>
+<li><p>&#x6DFB;&#x52A0;odoo&#x7684;&#x5B98;&#x65B9;&#x6E90;&#xFF1A;</p>
+<pre><code>deb http://nightly.odoo.com/12.0/nightly/deb/ ./
+</code></pre></li>
+<li><p>&#x66F4;&#x65B0;&#x6E90;&#x5217;&#x8868;</p>
+<pre><code class="lang-python">apt-get udpate
+</code></pre>
+<p>&#x6B64;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x80FD;&#x78B0;&#x5230;key&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x5230;<a href="https://nightly.odoo.com/odoo.key" target="_blank">https://nightly.odoo.com/odoo.key</a> &#x4E0B;&#x8F7D;&#x516C;&#x7528;key&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;sudo apt-key add&#x547D;&#x4EE4;&#x6DFB;&#x52A0;key:</p>
+<pre><code class="lang-sh">apt-key add odoo.key
+</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;apt-get&#x65B9;&#x5F0F;&#x5B89;&#x88C5;</p>
+<pre><code class="lang-sh">apt-get install odoo
+</code></pre>
+</li>
+</ol>
+<blockquote>
+<p>&#x7531;&#x4E8E;&#x56FD;&#x5185;&#x590D;&#x6742;&#x7684;&#x7F51;&#x7EDC;&#x60C5;&#x51B5;&#xFF0C;&#x4E0D;&#x6392;&#x9664;&#x6709;&#x4E9B;&#x5730;&#x533A;&#x7684;&#x4E0B;&#x8F7D;&#x901F;&#x5EA6;&#x4F1A;&#x975E;&#x5E38;&#x7F13;&#x6162;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x4F60;&#x9700;&#x8981;&#x7684;&#x662F;&#x8010;&#x5FC3;&#x3002;</p>
+</blockquote>
+<p>&#x5230;&#x8FD9;&#x4E00;&#x6B65;&#xFF0C;&#x8BFB;&#x8005;&#x5E94;&#x8BE5;&#x5DF2;&#x7ECF;&#x642D;&#x5EFA;&#x8D77;&#x6765;&#x4E86;odoo&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x4E0B;&#x4E00;&#x7AE0;&#x6211;&#x4EEC;&#x5C06;&#x6B63;&#x5F0F;&#x5F00;&#x59CB;&#x6211;&#x4EEC;&#x7684;&#x5F00;&#x53D1;&#x65C5;&#x7A0B;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../SECTION1.html" class="navigation navigation-prev " aria-label="Previous page: 第一部分">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter2/" class="navigation navigation-next " aria-label="Next page: 第二章 第一个模块">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第一章 环境搭建","level":"1.2.1","depth":2,"next":{"title":"第二章 第一个模块","level":"1.2.2","depth":2,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[]},"previous":{"title":"第一部分","level":"1.2","depth":1,"path":"SECTION1.md","ref":"SECTION1.md","articles":[{"title":"第一章 环境搭建","level":"1.2.1","depth":2,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[]},{"title":"第二章 第一个模块","level":"1.2.2","depth":2,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[]},{"title":"第三章 字段类型和基本视图类型","level":"1.2.3","depth":2,"path":"chapter3/README.md","ref":"chapter3/README.md","articles":[]},{"title":"第四章 搜索与继承","level":"1.2.4","depth":2,"path":"chapter4/README.md","ref":"chapter4/README.md","articles":[]},{"title":"第五章 API简介","level":"1.2.5","depth":2,"path":"chapter5/README.md","ref":"chapter5/README.md","articles":[]},{"title":"第六章 重载","level":"1.2.6","depth":2,"path":"chapter6/README.md","ref":"chapter6/README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/README.md","mtime":"2019-06-14T07:43:36.139Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-14T08:15:10.179Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

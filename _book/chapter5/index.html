@@ -1,0 +1,422 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第五章 API简介 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter6/" />
+    
+    
+    <link rel="prev" href="../chapter4/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../SECTION1.html">
+            
+                <a href="../SECTION1.html">
+            
+                    
+                    第一部分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第一章 环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    第二章 第一个模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    第三章 字段类型和基本视图类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    第四章 搜索与继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第五章 API简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    第六章 重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第五章 API简介</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x4E94;&#x7AE0;-api&#x7B80;&#x4ECB;">&#x7B2C;&#x4E94;&#x7AE0; API&#x7B80;&#x4ECB;</h1>
+<p>&#x7EC6;&#x5FC3;&#x7684;&#x670B;&#x53CB;&#x4E00;&#x5B9A;&#x6CE8;&#x610F;&#x5230;&#x4E86;&#xFF0C;odoo&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x7ECF;&#x5E38;&#x4F1A;&#x770B;&#x5230;&#x7531;api&#x88C5;&#x9970;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x662F;Odoo&#x4ECE;8.0&#x8D77;&#x5F15;&#x5165;&#x7684;&#x65B0;&#x7684;&#x7F16;&#x7A0B;API&#xFF0C;&#x90A3;&#x4E48;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5F15;&#x5165;&#x65B0;API&#x5462;&#xFF0C;&#x8FD9;&#x8981;&#x4ECE;&#x66F4;&#x65E9;&#x7684;&#x5386;&#x53F2;&#x8BF4;&#x8D77;&#x3002;</p>
+<h2 id="70&#x4E4B;&#x524D;&#x7684;api">7.0&#x4E4B;&#x524D;&#x7684;API</h2>
+<p>&#x5F53;&#x5E74;&#x90A3;&#x662F;Odoo&#x8FD8;&#x53EB;OpenERP&#x7684;&#x65F6;&#x4EE3;&#xFF0C;OpenObject&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x901A;&#x5E38;&#x90FD;&#x9700;&#x8981;&#x5E26;&#x7740;&#x51E0;&#x4E2A;&#x56FA;&#x5B9A;&#x7684;&#x53C2;&#x6570;&#xFF1A;cr,uid,ids,context&#x7B49;&#x7B49;&#xFF0C;&#x5199;&#x8D77;&#x6765;&#x5F88;&#x7E41;&#x7410;&#xFF0C;&#x6BD4;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">btn_import</span><span class="hljs-params">(self,cr,uid,ids,context=None)</span>:</span>
+    ...
+</code></pre>
+<p>&#x5230;&#x4E86;8.0&#xFF0C;&#x53EF;&#x80FD;Odoo&#x5B98;&#x65B9;&#x7684;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E5F;&#x89C9;&#x5F97;&#x8FD9;&#x6837;&#x5199;&#x8D77;&#x6765;&#x592A;&#x7E41;&#x7410;&#x4E86;&#xFF0C;&#x4E8E;&#x662F;&#x4E4E;&#xFF0C;&#x4ED6;&#x4EEC;&#x5F15;&#x5165;&#x4E86;&#x65B0;API&#xFF0C;&#x5C01;&#x88C5;&#x5728;api.py&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E3B;&#x8981;&#x6709;&#x4E00;&#x4E0B;&#x51E0;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ul>
+<li>model</li>
+<li>multi</li>
+<li>one</li>
+<li>constrains</li>
+<li>depends</li>
+<li>onchange</li>
+<li>returns</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5C31;&#x8FD9;&#x51E0;&#x79CD;&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x8BE6;&#x7EC6;&#x7684;&#x4ECB;&#x7ECD;&#x3002;</p>
+<h2 id="one">one</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A; &#x8868;&#x793A;&#x88AB;&#x5C01;&#x88C5;&#x7684;&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x5355;&#x4E00;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x4E00;&#x4E9B;&#x5355;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;
+&#x8FD4;&#x56DE;&#x503C;&#xFF1A; [None](&#x90E8;&#x5206;&#x4E0D;&#x8D1F;&#x8D23;&#x7684;&#x6559;&#x7A0B;&#x91CC;&#x8BF4;&#x4E0D;&#x8FD4;&#x56DE;&#x503C;)
+v7&#x7248;&#x672C;&#x5199;&#x6CD5;&#xFF1A; def funct(self,cr,uid,ids,context)</p>
+<p>&#x4E3E;&#x4F8B;&#xFF1A;
+&#x89C6;&#x56FE;&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x89E6;&#x53D1;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api.one</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_test</span><span class="hljs-params">(self)</span>:</span>
+    self.name = <span class="hljs-string">&quot;xxx&quot;</span>
+</code></pre>
+<h2 id="multi">multi</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x8868;&#x793A;&#x88AB;&#x5C01;&#x88C5;&#x7684;&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x5BF9;&#x8C61;&#xFF0C;&#x6B63;&#x597D;&#x4E0E;one&#x5BF9;&#x5E94;&#x3002;
+&#x8FD4;&#x56DE;&#x503C;&#xFF1A; &#x88AB;&#x5C01;&#x88C5;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;
+v7&#x7248;&#x672C;&#x5199;&#x6CD5;&#xFF1A; model.method(cr, uid, ids, args, context=context)</p>
+<p>multi&#x5178;&#x578B;&#x7684;&#x7528;&#x6CD5;&#x5373;odoo&#x5BF9;&#x8C61;&#x7684;write&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api.multi</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, vals)</span>:</span>
+    res = super(Book, self).write(vals)
+    <span class="hljs-keyword">return</span> res
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x7684;self&#x662F;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x5BF9;&#x8C61;&#xFF0C;vals&#x662F;&#x5F85;&#x66F4;&#x65B0;&#x7684;&#x5B57;&#x6BB5;&#x548C;&#x503C;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x4F8B;&#x5B50;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x7528;&#x5230;self&#xFF0C;&#x53EA;&#x662F;&#x8C03;&#x7528;&#x4E86;&#x7236;&#x7C7B;&#x7684;write&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;vals&#x5199;&#x5165;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8981;&#x4FEE;&#x6539;&#x67D0;&#x4E2A;&#x503C;&#xFF0C;&#x9700;&#x8981;&#x5BF9;self&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#xFF0C;&#x7136;&#x540E;&#x66F4;&#x65B0;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x3002;</p>
+<h2 id="model">model</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A;self&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x8BB0;&#x5F55;&#x96C6;&#x5408;&#xFF0C;&#x4F46;&#x5185;&#x5BB9;&#x4E0E;&#x8BB0;&#x5F55;&#x96C6;&#x65E0;&#x5173;&#xFF0C;&#x53EA;&#x662F;&#x4E0E;model&#x7C7B;&#x578B;&#x76F8;&#x5173;&#x3002;
+&#x8FD4;&#x56DE;&#x503C;&#xFF1A; &#x88AB;&#x88C5;&#x9970;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;
+v7&#x7248;&#x672C;&#x5199;&#x6CD5;&#xFF1A; model.method(cr, args)</p>
+<p>&#x5178;&#x578B;&#x5E94;&#x7528;&#x662F;&#x5BF9;&#x8C61;&#x7684;create&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api.model</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create</span><span class="hljs-params">(self,vals)</span>:</span>
+    <span class="hljs-keyword">return</span> super(Book,self).create(vals)
+</code></pre>
+<p>self&#x662F;&#x4E2A;&#x5BF9;&#x8C61;&#x96C6;&#x5408;&#xFF0C;&#x4F46;&#x662F;creat&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#x5374;&#x4E0E;self&#x8FD9;&#x4E2A;&#x96C6;&#x5408;&#x6CA1;&#x6709;&#x5173;&#x7CFB;&#xFF0C;&#x53EA;&#x662F;&#x7528;&#x4E86;self&#x7684;model&#x7C7B;&#x578B;&#xFF0C;&#x5C06;vals&#x7684;&#x503C;&#x8FDB;&#x884C;&#x521B;&#x5EFA;&#x64CD;&#x4F5C;&#x3002;</p>
+<h2 id="contrains">contrains</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x7ED9;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x6DFB;&#x52A0;&#x9650;&#x5236;&#x6761;&#x4EF6;
+v7&#x7248;&#x672C;&#xFF1A;&#x662F;&#x901A;&#x8FC7;_constrains&#x5C5E;&#x6027;&#x5173;&#x8054;&#x9A8C;&#x8BC1;&#x65B9;&#x6CD5;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;</p>
+<p>&#x5230;&#x4E86;&#x65B0;API&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x6DFB;&#x52A0;_constrains&#x5C5E;&#x6027;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x7ED9;&#x6821;&#x9A8C;&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;constrains&#x88C5;&#x9970;&#x5373;&#x53EF;&#x3002;</p>
+<pre><code class="lang-python">age = fields.Integer(string=<span class="hljs-string">&quot;age&quot;</span>)  
+
+&#xFF20;api.constrains(<span class="hljs-string">&apos;age&apos;</span>)
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_check_age</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">if</span> self.age&lt;<span class="hljs-number">16</span>:
+        <span class="hljs-keyword">raise</span> ValueError(_(<span class="hljs-string">&apos;Age must be older than 16&apos;</span>))
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x9650;&#x5236;&#x4E86;age&#x5B57;&#x6BB5;&#x53EA;&#x80FD;&#x8F93;&#x5165;&#x6BD4;16&#x5927;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<h3 id="&#x53E6;&#x5916;&#x4E00;&#x79CD;constrains">&#x53E6;&#x5916;&#x4E00;&#x79CD;constrains</h3>
+<p>odoo&#x652F;&#x6301;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x6DFB;&#x52A0;&#x9650;&#x5236;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5373;&#x901A;&#x8FC7;sql&#x7EA6;&#x675F;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x65B9;&#x6CD5;&#x662F;&#x5728;odoo&#x7C7B;&#x5BF9;&#x8C61;&#x4E2D;&#x6DFB;&#x52A0;_sql_constrains&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;&#x5143;&#x7EC4;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x5143;&#x7EC4;&#x7684;&#x4E09;&#x4E2A;&#x503C;&#x5206;&#x522B;&#x662F;&#x7EA6;&#x675F;&#x540D;&#xFF0C;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x548C;&#x8B66;&#x544A;&#x4FE1;&#x606F;&#xFF0C;&#x770B;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python">_sql_constraints = [
+    (<span class="hljs-string">&apos;name_description_check&apos;</span>,
+     <span class="hljs-string">&apos;CHECK(name != description)&apos;</span>,
+     <span class="hljs-string">&quot;The title of the course should not be the description&quot;</span>),
+    (<span class="hljs-string">&apos;name_unique&apos;</span>,
+     <span class="hljs-string">&apos;UNIQUE(name)&apos;</span>,
+     <span class="hljs-string">&quot;The course title must be unique&quot;</span>),
+]
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x505A;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF0C;&#x5728;&#x6570;&#x636E;&#x5E93;&#x5C42;&#x9762;&#x5C31;&#x9650;&#x5236;&#x4E86;&#x6570;&#x636E;&#x7684;&#x6821;&#x9A8C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5728;&#x4EE3;&#x7801;&#x5C42;&#x9762;&#x7684;&#x6821;&#x9A8C;&#xFF0C;&#x663E;&#x7136;&#x6548;&#x7387;&#x4F1A;&#x66F4;&#x9AD8;&#x3002;&#x7F3A;&#x70B9;&#x662F;&#x5728;&#x6DFB;&#x52A0;&#x9650;&#x5236;&#x4E4B;&#x524D;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4E0D;&#x80FD;&#x5B58;&#x5728;&#x8FDD;&#x53CD;&#x7EA6;&#x675F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5426;&#x5219;&#x7EA6;&#x675F;&#x4F1A;&#x6DFB;&#x52A0;&#x5931;&#x8D25;&#x3002;</p>
+<h2 id="depends">depends</h2>
+<p>depends&#x4E3B;&#x8981;&#x7528;&#x4E8E;compute&#x65B9;&#x6CD5;&#xFF0C;v8&#x5F53;&#x4E2D;&#x5DF2;&#x7ECF;&#x53D6;&#x6D88;&#x4E86;function&#x5B57;&#x6BB5;&#xFF0C;&#x5BF9;&#x4E8E;&#x4EFB;&#x4F55;fields&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;compute&#x5C5E;&#x6027;&#x52A8;&#x6001;&#x8D4B;&#x503C;&#x3002;depends&#x5C31;&#x662F;&#x7528;&#x6765;&#x6807;&#x8BE5;&#x65B9;&#x6CD5;&#x4F9D;&#x8D56;&#x4E8E;&#x54EA;&#x4E9B;&#x5B57;&#x6BB5;&#x7684;&#x88C5;&#x9970;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api.depends(&apos;date&apos;)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_get_book_age</span><span class="hljs-params">(self)</span>:</span>
+    self.age = (datetime.now().date() - self.date).days
+</code></pre>
+<p>&#x5BF9;&#x4E8E;compute&#x65B9;&#x6CD5;&#x6765;&#x8BF4;&#xFF0C;&#x52A0;&#x4E0D;&#x52A0;depends&#x88C5;&#x9970;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;&#x52A0;&#x4E86;depends&#x7684;&#x65B9;&#x6CD5;&#x4F1A;&#x5728;&#x4F9D;&#x8D56;&#x7684;&#x5B57;&#x6BB5;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x672C;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x4E0D;&#x52A0;depends&#x7684;&#x65B9;&#x6CD5;&#x53EA;&#x5728;&#x89E6;&#x53D1;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x4E0D;&#x4F1A;&#x6301;&#x7EED;&#x66F4;&#x65B0;&#x3002;</p>
+<h2 id="returns">returns</h2>
+<p>returns&#x7684;&#x7528;&#x6CD5;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5B83;&#x63A5;&#x53D7;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x4E3A;&#x8FD4;&#x56DE;&#x503C;&#x7684;model&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E3A;&#x5411;&#x4E0B;&#x517C;&#x5BB9;&#x7684;method&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x4E3A;&#x5411;&#x4E0A;&#x517C;&#x5BB9;&#x7684;method&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5982;&#x679C;&#x662F;&#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#xFF0C;&#x5219;&#x5199;&apos;self&apos;,&#x5982;&#x679C;&#x662F;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x5199;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x540D;&#x5982;&#xFF1A;@api.returns(&apos;ir.ui.view&apos;)&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api.multi    @api.returns(&apos;mail.message&apos;, lambda value: value.id)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">message_post</span><span class="hljs-params">(self, **kwargs)</span>:</span>
+    <span class="hljs-keyword">if</span> self.env.context.get(<span class="hljs-string">&apos;mark_so_as_sent&apos;</span>):
+        self.filtered(<span class="hljs-keyword">lambda</span> o: o.state == <span class="hljs-string">&apos;draft&apos;</span>).with_context(tracking_disable=<span class="hljs-keyword">True</span>).write({<span class="hljs-string">&apos;state&apos;</span>: <span class="hljs-string">&apos;sent&apos;</span>})
+        self.env.user.company_id.set_onboarding_step_done(<span class="hljs-string">&apos;sale_onboarding_sample_quotation_state&apos;</span>)
+    <span class="hljs-keyword">return</span> super(SaleOrder, self.with_context(mail_post_autofollow=<span class="hljs-keyword">True</span>)).message_post(**kwargs)
+</code></pre>
+<p>returns&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x786E;&#x4FDD;&#x65B0;&#x65E7;API&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x4E00;&#x81F4;&#xFF0C;&#x5E76;&#x4E0D;&#x5E38;&#x7528;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter4/" class="navigation navigation-prev " aria-label="Previous page: 第四章 搜索与继承">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter6/" class="navigation navigation-next " aria-label="Next page: 第六章 重载">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第五章 API简介","level":"1.2.5","depth":2,"next":{"title":"第六章 重载","level":"1.2.6","depth":2,"path":"chapter6/README.md","ref":"chapter6/README.md","articles":[]},"previous":{"title":"第四章 搜索与继承","level":"1.2.4","depth":2,"path":"chapter4/README.md","ref":"chapter4/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter5/README.md","mtime":"2019-06-14T08:14:55.263Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-14T08:15:10.179Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
