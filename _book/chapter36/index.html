@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第七章 菜单 · GitBook</title>
+        <title>第六章 Odoo中的图标 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter/README.md" />
+    <link rel="next" href="../SECTION4.html" />
     
     
     <link rel="prev" href="../chapter/README.md" />
@@ -356,9 +356,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.7" data-path="./">
+        <li class="chapter " data-level="1.3.7" data-path="../chapter27/">
             
-                <a href="./">
+                <a href="../chapter27/">
             
                     
                     第七章 菜单
@@ -479,9 +479,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6" data-path="../chapter36/">
+        <li class="chapter active" data-level="1.4.6" data-path="./">
             
-                <a href="../chapter36/">
+                <a href="./">
             
                     
                     第六章 Odoo中的图标
@@ -572,7 +572,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >第七章 菜单</a>
+        <a href=".." >第六章 Odoo中的图标</a>
     </h1>
 </div>
 
@@ -587,48 +587,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7B2C;&#x4E03;&#x7AE0;-&#x83DC;&#x5355;">&#x7B2C;&#x4E03;&#x7AE0; &#x83DC;&#x5355;</h1>
-<p>&#x83DC;&#x5355;&#x662F;odoo&#x79CD;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x7EC4;&#x4EF6;&#x4E4B;&#x4E00;&#xFF0C;&#x5176;&#x57FA;&#x672C;&#x7684;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#x4F5C;&#x4E3A;&#x524D;&#x7AEF;&#x548C;&#x52A8;&#x4F5C;(action)&#x7684;&#x7EBD;&#x5E26;&#x3002;&#x83DC;&#x5355;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#x5DF2;&#x7ECF;&#x63A5;&#x89E6;&#x5230;&#xFF0C;&#x5E76;&#x4E14;&#x5199;&#x4E86;&#x5F88;&#x591A;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x76F8;&#x4FE1;&#x8BFB;&#x8005;&#x5DF2;&#x7ECF;&#x719F;&#x7EC3;&#x7684;&#x5B66;&#x4F1A;&#x4E86;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x83DC;&#x5355;&#x5E76;&#x7ED1;&#x5B9A;&#x76F8;&#x5E94;&#x7684;&#x52A8;&#x4F5C;&#x3002;</p>
-<p>&#x672C;&#x7AE0;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x7740;&#x91CD;&#x8BA4;&#x8BC6;&#x83DC;&#x5355;&#x7684;&#x672C;&#x8D28;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x6240;&#x62E5;&#x6709;&#x7684;&#x54EA;&#x4E9B;&#x9AD8;&#x7EA7;&#x5C5E;&#x6027;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x7684;&#x9AD8;&#x7EA7;&#x5E94;&#x7528;&#x3002;</p>
-<h2 id="&#x83DC;&#x5355;&#x7684;&#x672C;&#x8D28;">&#x83DC;&#x5355;&#x7684;&#x672C;&#x8D28;</h2>
-<p>&#x83DC;&#x5355;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;odoo&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x88AB;&#x547D;&#x540D;&#x4E3A;ir.ui.menu&#x3002;</p>
-<p>&#x83DC;&#x5355;&#x5BF9;&#x8C61;&#x6240;&#x62E5;&#x6709;&#x7684;&#x5E38;&#x89C1;&#x5C5E;&#x6027;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x4E2A;&#xFF1A;</p>
-<ul>
-<li>name : &#x83DC;&#x5355;&#x7684;&#x540D;&#x5B57;</li>
-<li>complete_name: &#x5B8C;&#x6574;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F;&#x7531;&#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x5F97;&#x51FA;&#x7684;</li>
-<li>parent_id: &#x4E0A;&#x7EA7;&#x83DC;&#x5355;&#x7684;id</li>
-<li>action: &#x7ED1;&#x5B9A;&#x7684;&#x52A8;&#x4F5C;</li>
-<li>web_icon: &#x83DC;&#x5355;&#x7684;&#x56FE;&#x6807;</li>
-<li>sequence: &#x5E8F;&#x53F7;&#xFF08;&#x4F18;&#x5148;&#x7EA7;&#xFF09;</li>
-<li>web_icon_data: &#x4E0A;&#x4F20;&#x7684;&#x56FE;&#x6807;&#x6587;&#x4EF6;</li>
-<li>child_id: &#x5B50;&#x83DC;&#x5355;&#x96C6;</li>
-<li>group_ids: &#x6743;&#x9650;&#x7EC4;</li>
-</ul>
-<p>&#x6211;&#x4EEC;&#x5728;xml&#x6587;&#x4EF6;&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x6807;&#x7B7E;:</p>
-<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">menuitem</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;..&quot;</span> <span class="hljs-attr">parent</span>=<span class="hljs-string">&quot;..&quot;</span> <span class="hljs-attr">...</span>/&gt;</span>
+                                <h1 id="&#x7B2C;&#x516D;&#x7AE0;-odoo&#x4E2D;&#x7684;&#x56FE;&#x6807;">&#x7B2C;&#x516D;&#x7AE0; Odoo&#x4E2D;&#x7684;&#x56FE;&#x6807;</h1>
+<p>&#x4E0D;&#x77E5;&#x9053;&#x4F60;&#x6709;&#x6CA1;&#x6709;&#x7591;&#x60D1;&#xFF0C;odoo&#x4E2D;&#x7684;&#x56FE;&#x6807;&#x90FD;&#x662F;&#x4ECE;&#x54EA;&#x91CC;&#x6765;&#x7684;&#xFF1F;</p>
+<h2 id="font-awesome">Font Awesome</h2>
+<p>&#x53EF;&#x80FD;&#x6709;&#x641E;&#x8FC7;&#x524D;&#x7AEF;&#x7684;&#x540C;&#x5B66;&#x542C;&#x4E86;&#x89E3;&#x8FC7;&#x8FD9;&#x4E2A;&#x5B57;&#x4F53;&#x5E93;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x53EF;&#x7F29;&#x653E;&#x77E2;&#x91CF;&#x56FE;&#x6807;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x5B9A;&#x5236;&#x5927;&#x5C0F;&#x3001;&#x989C;&#x8272;&#x3001;&#x9634;&#x5F71;&#x4EE5;&#x53CA;&#x4EFB;&#x4F55;&#x53EF;&#x4EE5;&#x7528;CSS&#x7684;&#x6837;&#x5F0F;&#x3002;&#x6211;&#x4EEC;&#x7684;odoo&#x4E2D;&#x7684;&#x77E2;&#x91CF;&#x56FE;&#x6807;&#x90FD;&#x662F;&#x57FA;&#x4E8E;Font Awesome&#x5E93;&#x7684;&#x3002;&#x5F53;&#x524D;&#x7248;&#x672C;(12.0)&#x4F7F;&#x7528;&#x7684;fontawesome&#x5E93;&#x7684;&#x7248;&#x672C;&#x662F;4.7.0&#x3002;</p>
+<p>odoo&#x4E2D;&#x7684;&#x53EF;&#x7528;&#x56FE;&#x6807;&#x5E93;&#x53EF;&#x4EE5;&#x5728;&#x5982;&#x4E0B;&#x7684;&#x4F4D;&#x7F6E;&#x627E;&#x5230;&#x5305;&#x542B;&#x56FE;&#x6807;css&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-sh">/addons/web/static/lib/fontawesome/css/font-awesome.css
 </code></pre>
-<p>&#x5B9E;&#x9645;&#x5C31;&#x662F;&#x6B63;&#x5E38;record&#x7684;&#x7B80;&#x5199;&#x3002;&#x5B8C;&#x6574;&#x7684;&#x83DC;&#x5355;&#x53EF;&#x4EE5;&#x5199;&#x6210;&#x5982;&#x4E0B;&#x7684;&#x6A21;&#x5F0F;&#xFF1A;</p>
-<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">record</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;...&quot;</span> <span class="hljs-attr">model</span>=<span class="hljs-string">&quot;ir.ui.menu&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">field</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">field</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;parent_id&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">field</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;action&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">field</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;web_icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
-    ...
-<span class="hljs-tag">&lt;/<span class="hljs-name">record</span>&gt;</span>
+<h2 id="&#x56FE;&#x6807;&#x5E93;">&#x56FE;&#x6807;&#x5E93;</h2>
+<p>&#x867D;&#x7136;&#x77E5;&#x9053;&#x4E86;css&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x89C6;&#x5316;&#x7684;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x4F9B;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x3002;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x5230;&#x8FD9;&#x4E2A;<a href="http://fontawesome.dashgame.com/" target="_blank">&#x7F51;&#x5740;</a>&#x53BB;&#x67E5;&#x770B;&#x56FE;&#x6807;&#x5217;&#x8868;&#x3002;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x559C;&#x597D;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x7684;&#x56FE;&#x6807;&#x3002;</p>
+<p>&#x65B9;&#x4FBF;&#x8D77;&#x89C1;&#xFF0C;&#x8FD9;&#x91CC;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5E38;&#x89C1;&#x7684;&#x56FE;&#x6807;&#x5E93;&#x56FE;&#x7247;&#xFF0C;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;&#x3002;</p>
+<p><img src="1.png" alt="">
+<img src="2.png" alt="">
+<img src="3.png" alt="">
+<img src="4.png" alt="">
+<img src="5.png" alt=""></p>
+<h2 id="&#x57FA;&#x672C;&#x7684;&#x4F7F;&#x7528;">&#x57FA;&#x672C;&#x7684;&#x4F7F;&#x7528;</h2>
+<p>&#x5728;css&#x6837;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528;&#x524D;&#x7F00;fa&#x52A0;&#x4E0A;&#x56FE;&#x6807;&#x540D;&#x79F0;&#x5373;&#x53EF;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-camera-retro&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
 </code></pre>
-<h2 id="&#x83DC;&#x5355;&#x7684;&#x91CD;&#x5199;&#x4E0E;&#x7EE7;&#x627F;">&#x83DC;&#x5355;&#x7684;&#x91CD;&#x5199;&#x4E0E;&#x7EE7;&#x627F;</h2>
-<p>&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;&#x5728;odoo&#x4E2D;&#x7684;model&#x548C;qweb&#x4E2D;&#x7684;widget&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x548C;&#x91CD;&#x5199;&#x7684;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x5BF9;&#x4E8E;xml&#xFF0C;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x91CD;&#x5199;&#x548C;&#x7EE7;&#x627F;&#x7684;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5BF9;odoo&#x539F;&#x6709;&#x83DC;&#x5355;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x6216;&#x8005;&#x79FB;&#x52A8;&#x539F;&#x6709;&#x83DC;&#x5355;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x5982;&#x4F55;&#x53BB;&#x505A;&#x5462;&#xFF1F;</p>
-<blockquote>
-<p>&#x5BF9;&#x83DC;&#x5355;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x4E0D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7B80;&#x5199;&#x7684;&#x6A21;&#x5F0F;</p>
-</blockquote>
-<p>&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x83DC;&#x5355;&#x7684;&#x7EE7;&#x627F;&#x548C;&#x91CD;&#x5199;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x628A;xml&#x5B9A;&#x4E49;&#x4E2D;&#x7684;id&#x8DDF;&#x8981;&#x91CD;&#x5199;&#x7684;&#x83DC;&#x5355;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x8986;&#x76D6;&#xFF0C;&#x628A;&#x5BF9;&#x5E94;&#x7684;&#x5C5E;&#x6027;&#x6539;&#x6210;&#x65B0;&#x7684;&#x503C;&#x3002;</p>
-<p>&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x628A;&#x91C7;&#x8D2D;-&#x91C7;&#x8D2D;&#x83DC;&#x5355;&#x4E0B;&#x9762;&#x7684;&#x4EA7;&#x54C1;&#x83DC;&#x5355;&#x5355;&#x72EC;&#x62FF;&#x51FA;&#x6765;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x83DC;&#x5355;&#x201C;&#x57FA;&#x7840;&#x6570;&#x636E;&#x201D;&#x7684;&#x5B50;&#x83DC;&#x5355;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x5199;:</p>
-<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">record</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;purchase.product_product_menu&quot;</span> <span class="hljs-attr">model</span>=<span class="hljs-string">&quot;ir.ui.menu&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">field</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;parent_id&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;menu_purchase_main_data&quot;</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">field</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>Products<span class="hljs-tag">&lt;/<span class="hljs-name">field</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">record</span>&gt;</span>
+<h2 id="&#x653E;&#x5927;&#x56FE;&#x6807;">&#x653E;&#x5927;&#x56FE;&#x6807;</h2>
+<p>&#x4F7F;&#x7528;fa-lg (33%&#x9012;&#x589E;)&#x3001;fa-2x&#x3001; fa-3x&#x3001;fa-4x&#xFF0C;&#x6216;&#x8005; fa-5x &#x7C7B;&#x6765;&#x653E;&#x5927;&#x56FE;&#x6807;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-camera-retro fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> fa-lg
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-camera-retro fa-2x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> fa-2x
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-camera-retro fa-3x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> fa-3x
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-camera-retro fa-4x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> fa-4x
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-camera-retro fa-5x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> fa-5x
 </code></pre>
-<p>menu_purchase_main_data&#x662F;&#x6211;&#x81EA;&#x5DF1;&#x65B0;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x4E2A;&#x83DC;&#x5355;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x5BF9;&#x539F;&#x6709;&#x83DC;&#x5355;&#x7684;&#x7236;&#x83DC;&#x5355;&#x7684;&#x91CD;&#x5199;&#xFF0C;&#x754C;&#x9762;&#x4E0A;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x628A;&#x201C;&#x4EA7;&#x54C1;&#x201D;&#x83DC;&#x5355;&#x79FB;&#x8D70;&#x4E86;&#x3002;</p>
+<h2 id="&#x52A8;&#x753B;">&#x52A8;&#x753B;</h2>
+<p>&#x4F7F;&#x7528; fa-spin &#x7C7B;&#x6765;&#x4F7F;&#x4EFB;&#x610F;&#x56FE;&#x6807;&#x65CB;&#x8F6C;&#xFF0C;&#x73B0;&#x5728;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; fa-pulse &#x6765;&#x4F7F;&#x5176;&#x8FDB;&#x884C;8&#x65B9;&#x4F4D;&#x65CB;&#x8F6C;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-spinner fa-spin&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-circle-o-notch fa-spin&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-refresh fa-spin&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-cog fa-spin&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-spinner fa-pulse&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+</code></pre>
+<h2 id="&#x65CB;&#x8F6C;&#x4E0E;&#x7FFB;&#x8F6C;">&#x65CB;&#x8F6C;&#x4E0E;&#x7FFB;&#x8F6C;</h2>
+<p>&#x4F7F;&#x7528; fa-rotate-<em> &#x548C; fa-flip-</em> &#x7C7B;&#x53EF;&#x4EE5;&#x5BF9;&#x56FE;&#x6807;&#x8FDB;&#x884C;&#x4EFB;&#x610F;&#x65CB;&#x8F6C;&#x548C;&#x7FFB;&#x8F6C;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-shield&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> normal<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-shield fa-rotate-90&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> fa-rotate-90<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-shield fa-rotate-180&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> fa-rotate-180<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-shield fa-rotate-270&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> fa-rotate-270<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-shield fa-flip-horizontal&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> fa-flip-horizontal<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-shield fa-flip-vertical&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> icon-flip-vertical
+</code></pre>
+<p>&#x66F4;&#x591A;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;Font-Awesome&#x5B98;&#x65B9;&#x7F51;&#x7AD9;&#x3002;</p>
 
                                 
                                 </section>
@@ -656,12 +659,12 @@
 
             
                 
-                <a href="../chapter/README.md" class="navigation navigation-prev " aria-label="Previous page: 第六章 Widget">
+                <a href="../chapter/README.md" class="navigation navigation-prev " aria-label="Previous page: 第五章 RPC调用">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapter/README.md" class="navigation navigation-next " aria-label="Next page: 第八章 深入视图">
+                <a href="../SECTION4.html" class="navigation navigation-next " aria-label="Next page: 第四部分">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -672,7 +675,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第七章 菜单","level":"1.3.7","depth":2,"next":{"title":"第八章 深入视图","level":"1.3.8","depth":2,"path":"chapter/README.md","ref":"chapter/README.md","articles":[]},"previous":{"title":"第六章 Widget","level":"1.3.6","depth":2,"path":"chapter/README.md","ref":"chapter/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter27/README.md","mtime":"2019-06-19T10:04:19.098Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-20T07:27:46.667Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第六章 Odoo中的图标","level":"1.4.6","depth":2,"next":{"title":"第四部分","level":"1.5","depth":1,"path":"SECTION4.md","ref":"SECTION4.md","articles":[{"title":"第一章 odoo中的单元测试","level":"1.5.1","depth":2,"path":"chapter/README.md","ref":"chapter/README.md","articles":[]},{"title":"第二章 CI/CD在odoo中的应用","level":"1.5.2","depth":2,"path":"chapter/README.md","ref":"chapter/README.md","articles":[]}]},"previous":{"title":"第五章 RPC调用","level":"1.4.5","depth":2,"path":"chapter/README.md","ref":"chapter/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter36/README.md","mtime":"2019-06-20T07:20:53.274Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-20T07:27:46.667Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

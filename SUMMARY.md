@@ -29,6 +29,7 @@
   * [第三章 动态执行python代码及预置变量](chapter/README.md)
   * [第四章 Odoo与Restful API](chapter/README.md)
   * [第五章 RPC调用](chapter/README.md)
+  * [第六章 Odoo中的图标](chapter36/README.md)
 * [第四部分](SECTION4.md)
   * [第一章 odoo中的单元测试](chapter/README.md)
   * [第二章 CI/CD在odoo中的应用](chapter/README.md)
