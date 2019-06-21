@@ -1,0 +1,790 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第一章 Odoo内置方法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter22/" />
+    
+    
+    <link rel="prev" href="../SECTION2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../SECTION1.html">
+            
+                <a href="../SECTION1.html">
+            
+                    
+                    第一部分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第一章 环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    第二章 第一个模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    第三章 字段类型和基本视图类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    第四章 搜索与继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    第五章 API简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    第六章 重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../chapter7/">
+            
+                <a href="../chapter7/">
+            
+                    
+                    第七章 视图的继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../chapter8/README.md">
+            
+                <span>
+            
+                    
+                    第八章 用户与组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../chapter9/README.md">
+            
+                <span>
+            
+                    
+                    第九章 权限与记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../chapter10/README.md">
+            
+                <span>
+            
+                    
+                    第十章 系统参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../chapter11/README.md">
+            
+                <span>
+            
+                    
+                    第十一章 报表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../SECTION2.html">
+            
+                <a href="../SECTION2.html">
+            
+                    
+                    第二部分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章 Odoo内置方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter22/">
+            
+                <a href="../chapter22/">
+            
+                    
+                    第二章 动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第三章 控制器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第四章 QWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter25/">
+            
+                <a href="../chapter25/">
+            
+                    
+                    第五章 QWeb的继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第六章 Widget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../chapter27/">
+            
+                <a href="../chapter27/">
+            
+                    
+                    第七章 菜单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../chapter28/">
+            
+                <a href="../chapter28/">
+            
+                    
+                    第八章 深入视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第九章 ir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../chapter210/">
+            
+                <a href="../chapter210/">
+            
+                    
+                    第十章 Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../SECTION3.html">
+            
+                <a href="../SECTION3.html">
+            
+                    
+                    第三部分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第一章 基类方法的重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第二章 自定义字段类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第三章 动态执行python代码及预置变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第四章 Odoo与Restful API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第五章 RPC调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter36/">
+            
+                <a href="../chapter36/">
+            
+                    
+                    第六章 Odoo中的图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../SECTION4.html">
+            
+                <a href="../SECTION4.html">
+            
+                    
+                    第四部分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第一章 odoo中的单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter/README.md">
+            
+                <span>
+            
+                    
+                    第二章 CI/CD在odoo中的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第一章 Odoo内置方法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x4E00;&#x7AE0;-odoo&#x7684;&#x5185;&#x7F6E;&#x65B9;&#x6CD5;">&#x7B2C;&#x4E00;&#x7AE0; Odoo&#x7684;&#x5185;&#x7F6E;&#x65B9;&#x6CD5;</h1>
+<p>odoo&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5F00;&#x53D1;&#xFF0C;&#x5185;&#x7F6E;&#x5F88;&#x591A;&#x5B9E;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5728;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E2D;&#x90FD;&#x6CA1;&#x6709;&#x8BF4;&#x660E;&#xFF0C;&#x5C5E;&#x4E8E;&#x9690;&#x85CF;&#x7684;&#x77E5;&#x8BC6;&#xFF0C;&#x672C;&#x7AE0;&#x5C06;&#x5E26;&#x9886;&#x5927;&#x5BB6;&#x6765;&#x8BA4;&#x8BC6;&#x4E00;&#x4E0B;&#x8FD9;&#x4E9B;&#x5185;&#x7F6E;&#x65B9;&#x6CD5;&#x53CA;&#x5176;&#x5E94;&#x7528;&#x573A;&#x666F;&#x3002;</p>
+<h2 id="nameget&#x65B9;&#x6CD5;">name_get&#x65B9;&#x6CD5;</h2>
+<p>&#x9996;&#x5148;&#x8981;&#x7ED9;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x7684;&#x5C31;&#x662F;name_get&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5728;&#x6240;&#x6709;&#x83B7;&#x53D6;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x7684;&#x540D;&#x79F0;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5178;&#x578B;&#x7684;&#x573A;&#x666F;&#x5C31;&#x662F;Many2one&#x5B57;&#x6BB5;&#x7684;&#x641C;&#x7D22;&#x6846;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x8F93;&#x5165;&#x5173;&#x952E;&#x5B57;&#x540E;&#xFF0C;&#x4E0B;&#x62C9;&#x91CC;&#x5217;&#x8868;&#x4E2D;&#x5C55;&#x793A;&#x51FA;&#x6765;&#x7684;&#x540D;&#x79F0;&#x5C31;&#x662F;&#x901A;&#x8FC7;name_get&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api.multi</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">name_get</span><span class="hljs-params">(self)</span>:</span>
+    values = super(Demo, self).name_get()
+    _logger.info(f<span class="hljs-string">&quot;name_get&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;:{values}&quot;</span>)
+    <span class="hljs-keyword">return</span> values
+</code></pre>
+<p><img src="nameget.png" alt=""></p>
+<p>name_get&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;id&#x548C;&#x540D;&#x79F0;&#x7684;&#x5143;&#x7EC4;&#x7EC4;&#x6210;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+<h2 id="namesearch&#x65B9;&#x6CD5;">name_search&#x65B9;&#x6CD5;</h2>
+<p>&#x63D0;&#x5230;&#x4E86;name_get&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x4E0D;&#x5F97;&#x4E0D;&#x63D0;name_search&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5728;Many2one&#x4E0A;&#x8FDB;&#x884C;&#x6A21;&#x7CCA;&#x641C;&#x7D22;&#x65F6;&#xFF0C;&#x641C;&#x7D22;&#x90E8;&#x5206;&#x7684;&#x5DE5;&#x4F5C;&#x662F;&#x7531;name_search&#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x7136;&#x540E;name_search&#x628A;&#x641C;&#x7D22;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x4F20;&#x9012;&#x7ED9;name_get&#x65B9;&#x6CD5;&#xFF0C;&#x4ECE;&#x800C;&#x8FD4;&#x56DE;&#x6211;&#x4EEC;&#x4E0A;&#x9762;&#x8BB2;&#x5230;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x5217;&#x8868;&#x3002;</p>
+<p>name search&#x65B9;&#x6CD5;&#x63A5;&#x53D7;4&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li>name: &#x88AB;&#x641C;&#x7D22;&#x7684;&#x5173;&#x952E;&#x5B57;</li>
+<li>args: &#x9650;&#x5B9A;&#x6761;&#x4EF6;domain</li>
+<li>operator: &#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#x6709;&#xFF1A;=,!=,&gt;,&gt;=,&lt;,&lt;=,like,ilike,in,not in,child_of,parent_left,parent_right</li>
+<li>limit: &#x641C;&#x7D22;&#x7ED3;&#x679C;&#x7684;&#x6761;&#x6570;&#x3002;</li>
+</ul>
+<p><img src="namesearch.png" alt=""></p>
+<p>&#x4ECE;&#x7ED3;&#x679C;&#x4E0A;&#x770B;&#xFF0C;name_search&#x65B9;&#x6CD5;&#x5E76;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E26;&#x6587;&#x672C;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;&#x5EF6;&#x8FDF;&#x8BA1;&#x7B97;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#xFF0C;&#x5728;&#x539F;&#x751F;name_search&#x65B9;&#x6CD5;&#x4E2D;&#x8C03;&#x7528;&#x4E86;lazy_name_get&#x65B9;&#x6CD5;&#x5BFC;&#x81F4;&#x7684;&#xFF0C;&#x4ECE;&#x8FD9;&#x91CC;&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x51FA;name_search&#x548C;name_get&#x65B9;&#x6CD5;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x5373;&#xFF0C;&#x7531;name_search&#x65B9;&#x6CD5;&#x9650;&#x5236;&#x6761;&#x4EF6;&#x8FC7;&#x6EE4;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x628A;&#x7ED3;&#x679C;&#x4F20;&#x7ED9;name_get&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x663E;&#x793A;&#x3002;</p>
+<h3 id="&#x79C1;&#x6709;namesearch&#x65B9;&#x6CD5;">&#x79C1;&#x6709;_name_search&#x65B9;&#x6CD5;</h3>
+<p>&#x5176;&#x5B9E;&#x5728;&#x66F4;&#x5E95;&#x5C42;&#x7684;&#x5C42;&#x9762;&#x4E0A;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;_name_search&#x65B9;&#x6CD5;&#xFF0C;&#x4E0E;name_search&#x65B9;&#x6CD5;&#x4E0D;&#x540C;&#x7684;&#x662F;_name_search&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x989D;&#x5916;&#x7684;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;name_get_uid&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x8C03;&#x7528;_search&#x548C;lazy_name_get&#x65B9;&#x6CD5;&#x7684;&#x7528;&#x6237;ID&#xFF0C;&#x7528;&#x6765;&#x89E3;&#x51B3;&#x5F53;&#x524D;&#x7528;&#x6237;&#x6743;&#x9650;&#x4E0D;&#x8DB3;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x5F53;&#x524D;&#x6211;&#x6709;&#x4E00;&#x4E2A;&#x6A21;&#x578B;osc.person&#xFF0C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x7EC4;&#x6709;&#x6743;&#x9650;&#x8BBF;&#x95EE;&#xFF0C;&#x6B63;&#x5E38;&#x8BBF;&#x95EE;&#x4F1A;&#x8BD5;&#x5982;&#x4E0B;&#x7684;&#x754C;&#x9762;&#xFF1A;</p>
+<p><img src="error.png" alt=""></p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x7ED9;_name_search&#x65B9;&#x6CD5;&#x4F20;&#x4E00;&#x4E2A;uid=1&#x8FDB;&#x53BB;&#x7684;&#x65F6;&#x5019;:</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api.model</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_name_search</span><span class="hljs-params">(self, name, args=None, operator=<span class="hljs-string">&apos;ilike&apos;</span>, limit=<span class="hljs-number">100</span>, name_get_uid=None)</span>:</span>
+    _logger.info(f<span class="hljs-string">&quot;&#x79C1;&#x6709;name search&#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x53C2;&#x6570;&#xFF1A;{name,args,operator}&quot;</span>)
+    res = super(Person, self)._name_search(name, args, operator, limit, <span class="hljs-number">1</span>)
+    _logger.info(f<span class="hljs-string">&quot;&#x7ED3;&#x679C;&#xFF1A;{res}&quot;</span>)
+    <span class="hljs-keyword">return</span> res
+</code></pre>
+<p><img src="search.png" alt=""></p>
+<blockquote>
+<p>odoo12&#x4E2D;uid=1&#x4E0D;&#x518D;&#x662F;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x7684;id&#xFF0C;&#x53D8;&#x6210;&#x4E86;&#x673A;&#x5668;&#x4EBA;odoo_bot&#xFF0C;&#x8D85;&#x7EA7;&#x7BA1;&#x7406;&#x5458;&#x7684;ID&#x53D8;&#x6210;&#x4E86;2</p>
+</blockquote>
+<h2 id="fieldsgetkeys">fields_get_keys</h2>
+<p>&#x83B7;&#x53D6;&#x672C;&#x6A21;&#x578B;&#x7684;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x3002;</p>
+<h2 id="loadviews">load_views</h2>
+<pre><code class="lang-python"><span class="hljs-meta">@api.model</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_views</span><span class="hljs-params">(self, views, options=None)</span>:</span>
+        <span class="hljs-keyword">pass</span>
+</code></pre>
+<p>load_views&#x7528;&#x4E8E;&#x52A0;&#x8F7D;&#x89C6;&#x56FE;&#xFF0C;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;views&#x548C;options&#x3002;</p>
+<ul>
+<li>views: list&#x7C7B;&#x578B;[view_id,view_type]</li>
+<li>options: &#x5B57;&#x5178;&#x7C7B;&#x578B;&#xFF0C;options[&apos;toolbar&apos;]&#x4E3A;&#x771F;&#x65F6;&#x52A0;&#x8F7D;&#x4E0A;&#x4E0B;&#x6587;&#x5DE5;&#x5177;&#xFF0C;options[&apos;load_filters&apos;]&#x4E3A;&#x771F;&#x65F6;&#x8FD4;&#x56DE;&#x6A21;&#x578B;&#x7684;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;options[&apos;action_id&apos;]&#x4E3A;&#x83B7;&#x53D6;&#x8FC7;&#x6EE4;&#x5668;&#x7684;&#x52A8;&#x4F5C;ID</li>
+</ul>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x5305;&#x542B;fields_views&#xFF0C;fields&#x548C;filters&#x7684;&#x5B57;&#x5178;&#x3002;</p>
+<p>load_views&#x65B9;&#x6CD5;&#x5728;&#x6BCF;&#x6B21;&#x6D4F;&#x89C8;&#x5668;&#x52A0;&#x8F7D;&#x89C6;&#x56FE;&#x65F6;&#x90FD;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4E00;&#x822C;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x8F7D;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x5BF9;&#x8FD4;&#x56DE;&#x7684;&#x89C6;&#x56FE;&#x6709;&#x7279;&#x6B8A;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
+<h2 id="fieldsviewget">fields_view_get</h2>
+<p>fields_view_get&#x65B9;&#x6CD5;&#x662F;&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x89C6;&#x56FE;&#x7684;&#x8BE6;&#x7EC6;&#x7EC4;&#x6210;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5B83;&#x8DDF;load_views&#x7684;&#x5173;&#x7CFB;&#x662F;&#xFF0C;load_view&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#x8C03;&#x7528;&#x4E86;&#x672C;&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5230;&#x8BE6;&#x7EC6;&#x7684;&#x89C6;&#x56FE;&#x7C7B;&#x578B;&#x548C;&#x89C6;&#x56FE;&#x5E03;&#x5C40;&#x3002;</p>
+<p>fields_view_get&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api.model</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fields_view_get</span><span class="hljs-params">(self, view_id=None, view_type=<span class="hljs-string">&apos;form&apos;</span>, toolbar=False, submenu=False)</span>:</span>
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+<p>&#x63A5;&#x6536;&#x7684;&#x53C2;&#x6570;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>view_id&#xFF1A; &#x89C6;&#x56FE;&#x7684;ID&#x6216;None</li>
+<li>view_type: &#x89C6;&#x56FE;&#x7684;&#x7C7B;&#x578B;&#xFF08;form,tree, ...)</li>
+<li>toolbar: &#x662F;&#x5426;&#x5305;&#x542B;&#x4E0A;&#x4E0B;&#x6587;&#x52A8;&#x4F5C;</li>
+<li>submenu: &#x8BE5;&#x53C2;&#x6570;&#x5DF2;&#x8FC7;&#x65F6;&#x5F03;&#x7528;</li>
+</ul>
+<p>&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x7684;book_store&#x5E94;&#x7528;&#xFF0C;&#x5728;&#x52A0;&#x8F7D;&#x89C6;&#x56FE;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8C03;&#x7528;fields_view_get&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;:</p>
+<pre><code class="lang-python">{<span class="hljs-string">&apos;model&apos;</span>: <span class="hljs-string">&apos;book_store.book&apos;</span>, <span class="hljs-string">&apos;field_parent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;arch&apos;</span>: 
+<span class="hljs-string">&apos;&lt;search string=&quot;&#x56FE;&#x4E66;&#x641C;&#x7D22;&quot;&gt;\n &lt;field name=&quot;author&quot; can_create=&quot;true&quot; can_write=&quot;true&quot; modifiers=&quot;{&amp;quot;required&amp;quot;: true}&quot;/&gt;\n          &lt;field name=&quot;date&quot; modifiers=&quot;{}&quot;/&gt;\n          &lt;field name=&quot;price&quot; modifiers=&quot;{}&quot;/&gt;\n          &lt;separator/&gt;\n          &lt;filter name=&quot;liu_book&quot; string=&quot;&#x5927;&#x5218;&#x5C0F;&#x8BF4;&quot; domain=&quot;[(\&apos;author\&apos;,\&apos;=\&apos;,\&apos;&#x5218;&#x6148;&#x6B23;\&apos;)]&quot;/&gt;\n          &lt;separator/&gt;\n          &lt;group expand=&quot;0&quot; string=&quot;Group By&quot;&gt;\n            &lt;filter name=&quot;author&quot; string=&quot;&#x6309;&#x4F5C;&#x8005;&#x5206;&#x7EC4;&quot; domain=&quot;[]&quot; context=&quot;{\&apos;group_by\&apos;:\&apos;author\&apos;}&quot;/&gt;\n          &lt;/group&gt;\n        &lt;/search&gt;&apos;</span>, 
+    <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;&#x56FE;&#x4E66;&#x641C;&#x7D22;&apos;</span>, <span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;search&apos;</span>, <span class="hljs-string">&apos;view_id&apos;</span>: <span class="hljs-number">813</span>, <span class="hljs-string">&apos;base_model&apos;</span>: <span class="hljs-string">&apos;book_store.book&apos;</span>, 
+    <span class="hljs-string">&apos;fields&apos;</span>: {<span class="hljs-string">&apos;author&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;many2one&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;context&apos;</span>: {}, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;domain&apos;</span>: [], <span class="hljs-string">&apos;help&apos;</span>: <span class="hljs-string">&apos;&#x4F5C;&#x8005;&apos;</span>, <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;relation&apos;</span>: <span class="hljs-string">&apos;book_store.author&apos;</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;&#x4F5C;&#x8005;&apos;</span>, <span class="hljs-string">&apos;views&apos;</span>: {}}, 
+    <span class="hljs-string">&apos;date&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;date&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;help&apos;</span>: <span class="hljs-string">&apos;&#x65E5;&#x671F;&apos;</span>, <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;&#x51FA;&#x7248;&#x65E5;&#x671F;&apos;</span>, <span class="hljs-string">&apos;views&apos;</span>: {}}, 
+    <span class="hljs-string">&apos;price&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;float&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;group_operator&apos;</span>: <span class="hljs-string">&apos;sum&apos;</span>, <span class="hljs-string">&apos;help&apos;</span>: <span class="hljs-string">&apos;&#x5B9A;&#x4EF7;&apos;</span>, <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;&#x5B9A;&#x4EF7;&apos;</span>, <span class="hljs-string">&apos;views&apos;</span>: {}}}}
+</code></pre>
+<p>&#x5F88;&#x5BB9;&#x6613;&#x770B;&#x51FA;&#xFF0C;&#x8FD9;&#x4E2A;&#x52A0;&#x8F7D;&#x7684;&#x662F;&#x641C;&#x7D22;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x540C;&#x6837;&#x7684;&#xFF0C;form&#x548C;tree&#x89C6;&#x56FE;&#x52A0;&#x8F7D;&#x65F6;&#x4E5F;&#x4F1A;&#x8C03;&#x7528;&#x540C;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;odoo&#x7684;&#x9875;&#x9762;&#x5E03;&#x5C40;&#x90FD;&#x662F;&#x5199;&#x5728;XML&#x4E2D;&#x7136;&#x540E;&#x9759;&#x6001;&#x5B58;&#x50A8;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#xFF0C;&#x800C;fields_view_get&#x5C31;&#x7ED9;&#x4E86;&#x6211;&#x4EEC;&#x4E00;&#x4E2A;&#x52A8;&#x6001;&#x4FEE;&#x6539;&#x89C6;&#x56FE;&#x7684;&#x673A;&#x4F1A;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x9700;&#x8981;&#x5728;&#x62FF;&#x5230;&#x89C6;&#x56FE;&#x6570;&#x636E;&#x4E4B;&#x540E;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8FD4;&#x56DE;&#x7ED9;&#x524D;&#x7AEF;&#x3002;</p>
+<h2 id="fieldsget">fields_get</h2>
+<p>fields_get&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x5B9A;&#x4E49;</p>
+<pre><code class="lang-python"><span class="hljs-meta">@api.model</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fields_get</span><span class="hljs-params">(self, allfields=None, attributes=None)</span>:</span>
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+<p>&#x5B83;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li>allfields: &#x5B57;&#x6BB5;&#x5217;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x4E3A;&#x7A7A;&#x5219;&#x8FD4;&#x56DE;&#x5168;&#x90E8;&#x5B57;&#x6BB5;</li>
+<li>attributes&#xFF1A; &#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#xFF0C;&#x5982;&#x679C;&#x4E3A;&#x7A7A;&#x5219;&#x8FD4;&#x56DE;&#x5168;&#x90E8;&#x5C5E;&#x6027;</li>
+</ul>
+<p>&#x524D;&#x9762;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;fields_view_get&#x662F;&#x88AB;load_views&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x540C;&#x6837;&#x7684;&#xFF0C;fields_get&#x4E5F;&#x662F;&#x88AB;load_views&#x8C03;&#x7528;&#x7684;&#x3002;&#x4ED6;&#x4EEC;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x89C6;&#x56FE;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x5B57;&#x6BB5;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x6700;&#x7EC8;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x89C6;&#x56FE;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x4E00;&#x4E0B;fields_get&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python">{<span class="hljs-string">&apos;name&apos;</span>: 
+{<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;char&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;help&apos;</span>: <span class="hljs-string">&apos;&#x4E66;&#x540D;&apos;</span>, <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;&#x540D;&#x79F0;&apos;</span>, <span class="hljs-string">&apos;translate&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;trim&apos;</span>: <span class="hljs-keyword">True</span>}, 
+<span class="hljs-string">&apos;author&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;many2one&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;context&apos;</span>: {}, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;domain&apos;</span>: [], <span class="hljs-string">&apos;help&apos;</span>: <span class="hljs-string">&apos;&#x4F5C;&#x8005;&apos;</span>, <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;relation&apos;</span>: <span class="hljs-string">&apos;book_store.author&apos;</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;&#x4F5C;&#x8005;&apos;</span>}, <span class="hljs-string">&apos;date&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;date&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;help&apos;</span>: <span class="hljs-string">&apos;&#x65E5;&#x671F;&apos;</span>, <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;&#x51FA;&#x7248;&#x65E5;&#x671F;&apos;</span>}, 
+<span class="hljs-string">&apos;price&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;float&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;group_operator&apos;</span>: <span class="hljs-string">&apos;sum&apos;</span>, <span class="hljs-string">&apos;help&apos;</span>: <span class="hljs-string">&apos;&#x5B9A;&#x4EF7;&apos;</span>, <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;&#x5B9A;&#x4EF7;&apos;</span>}, <span class="hljs-string">&apos;ref&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;reference&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;selection&apos;</span>: [(<span class="hljs-string">&apos;book_store.author&apos;</span>, <span class="hljs-string">&apos;&#x4F5C;&#x8005;&apos;</span>), (<span class="hljs-string">&apos;book_store.publisher&apos;</span>, <span class="hljs-string">&apos;&#x51FA;&#x7248;&#x5546;&apos;</span>)], <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;Ref&apos;</span>}, <span class="hljs-string">&apos;age&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;integer&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (<span class="hljs-string">&apos;date&apos;</span>,), 
+<span class="hljs-string">&apos;group_operator&apos;</span>: <span class="hljs-string">&apos;sum&apos;</span>, <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;&#x4E66;&#x9F84;&apos;</span>}, <span class="hljs-string">&apos;category&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;char&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, 
+<span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;&#x5206;&#x7C7B;&apos;</span>, <span class="hljs-string">&apos;translate&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;trim&apos;</span>: <span class="hljs-keyword">True</span>}, <span class="hljs-string">&apos;id&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;integer&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, 
+<span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;ID&apos;</span>}, <span class="hljs-string">&apos;display_name&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;char&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;Display Name&apos;</span>, <span class="hljs-string">&apos;translate&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;trim&apos;</span>: <span class="hljs-keyword">True</span>}, <span class="hljs-string">&apos;create_uid&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;many2one&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;context&apos;</span>: {}, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;domain&apos;</span>: [], <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;relation&apos;</span>: <span class="hljs-string">&apos;res.users&apos;</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, 
+<span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;Created by&apos;</span>}, 
+<span class="hljs-string">&apos;create_date&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;datetime&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;Created on&apos;</span>}, <span class="hljs-string">&apos;write_uid&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;many2one&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;context&apos;</span>: {}, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;domain&apos;</span>: [], <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;relation&apos;</span>: <span class="hljs-string">&apos;res.users&apos;</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, 
+<span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;Last Updated by&apos;</span>}, <span class="hljs-string">&apos;write_date&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;datetime&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (), <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;Last Updated on&apos;</span>}, <span class="hljs-string">&apos;__last_update&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;datetime&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;depends&apos;</span>: (<span class="hljs-string">&apos;create_date&apos;</span>, <span class="hljs-string">&apos;write_date&apos;</span>), <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">False</span>, 
+<span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;Last Modified on&apos;</span>}, <span class="hljs-string">&apos;publisher_id&apos;</span>: {<span class="hljs-string">&apos;type&apos;</span>: <span class="hljs-string">&apos;many2one&apos;</span>, <span class="hljs-string">&apos;change_default&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;company_dependent&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;context&apos;</span>: {}, 
+<span class="hljs-string">&apos;depends&apos;</span>: (<span class="hljs-string">&apos;author.publisher_id&apos;</span>,), <span class="hljs-string">&apos;domain&apos;</span>: [], <span class="hljs-string">&apos;help&apos;</span>: <span class="hljs-string">&apos;&apos;</span>, <span class="hljs-string">&apos;manual&apos;</span>: <span class="hljs-keyword">False</span>, 
+<span class="hljs-string">&apos;readonly&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;related&apos;</span>: (<span class="hljs-string">&apos;author&apos;</span>, <span class="hljs-string">&apos;publisher_id&apos;</span>), <span class="hljs-string">&apos;relation&apos;</span>: <span class="hljs-string">&apos;book_store.publisher&apos;</span>, 
+<span class="hljs-string">&apos;required&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;searchable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;sortable&apos;</span>: <span class="hljs-keyword">True</span>, <span class="hljs-string">&apos;store&apos;</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">&apos;string&apos;</span>: <span class="hljs-string">&apos;&#x7B7E;&#x7EA6;&#x51FA;&#x7248;&#x5546;&apos;</span>}}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../SECTION2.html" class="navigation navigation-prev " aria-label="Previous page: 第二部分">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter22/" class="navigation navigation-next " aria-label="Next page: 第二章 动作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第一章 Odoo内置方法","level":"1.3.1","depth":2,"next":{"title":"第二章 动作","level":"1.3.2","depth":2,"path":"chapter22/README.md","ref":"chapter22/README.md","articles":[]},"previous":{"title":"第二部分","level":"1.3","depth":1,"path":"SECTION2.md","ref":"SECTION2.md","articles":[{"title":"第一章 Odoo内置方法","level":"1.3.1","depth":2,"path":"chapter21/README.md","ref":"chapter21/README.md","articles":[]},{"title":"第二章 动作","level":"1.3.2","depth":2,"path":"chapter22/README.md","ref":"chapter22/README.md","articles":[]},{"title":"第三章 控制器","level":"1.3.3","depth":2,"path":"chapter/README.md","ref":"chapter/README.md","articles":[]},{"title":"第四章 QWeb","level":"1.3.4","depth":2,"path":"chapter/README.md","ref":"chapter/README.md","articles":[]},{"title":"第五章 QWeb的继承","level":"1.3.5","depth":2,"path":"chapter25/README.md","ref":"chapter25/README.md","articles":[]},{"title":"第六章 Widget","level":"1.3.6","depth":2,"path":"chapter/README.md","ref":"chapter/README.md","articles":[]},{"title":"第七章 菜单","level":"1.3.7","depth":2,"path":"chapter27/README.md","ref":"chapter27/README.md","articles":[]},{"title":"第八章 深入视图","level":"1.3.8","depth":2,"path":"chapter28/README.md","ref":"chapter28/README.md","articles":[]},{"title":"第九章 ir","level":"1.3.9","depth":2,"path":"chapter/README.md","ref":"chapter/README.md","articles":[]},{"title":"第十章 Model","level":"1.3.10","depth":2,"path":"chapter210/README.md","ref":"chapter210/README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter21/README.md","mtime":"2019-06-21T09:43:20.399Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-21T09:43:31.826Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
