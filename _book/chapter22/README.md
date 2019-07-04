@@ -108,7 +108,96 @@ server类型的action主要的使用场景是执行一段预定义的python代�
 * link_field_id： 指定当前记录与新记录进行many2one关联的字段
 * fields_lines： 创建或复制记录时需要的字段。
 
-[TODO]
+server action的用处有很多，odoo中的定时任务就是利用server action实现的。
+
+下面我们将以导出销售订单Excel文件为例，看如何利用server action。
+
+### action server应用之一 导出销售订单Excel文件
+
+这是一个实际实施过程中常见的需求，要求将某模型的数据导出为Excel。首先，我们需要把数据组织出来，然后使用xlwt库写成excel文件，最后将文件返回给用户。由于我们这个动作是在更多按钮中进行的，因此定义为一个server action更为合适。
+
+#### server action
+
+定义server action
+
+```xml
+<record id="act_sale_export" model="ir.actions.server">
+    <field name="name">销售订单导出</field>
+    <field name="model_id" ref="sale.model_sale_order"/>
+    <field name="state">code</field>
+    <field name="code">
+        action=model.export_order()
+    </field>
+    <field name="binding_model_id" ref="sale.model_sale_order"/>
+</record>
+```
+
+这个server action中定义了要调用的模型（sale.order)和要调用的方法（export_order)。由于我们需要通过controller将文件返回给用户，因此，我们需要这个方法返回一个action，返回action的方法是定义一个action变量存储被调用方法的返回值，odoo会自动识别action并执行这个动作。
+
+```python
+def export_order(self):
+    """导出销售订单"""
+    order = self.browse(self.env.context.get("active_id", None))
+    if order:
+        wkbook = xlwt.Workbook()
+        wksheet = wkbook.add_sheet(f"销售订单{order.name}")
+
+        wksheet.write(0, 0, "产品")
+        wksheet.write(0, 1, "订购数量")
+        wksheet.write(0, 2, "计量单位")
+        wksheet.write(0, 3, "单价")
+        wksheet.write(0, 4, "小计")
+
+        row = 1
+        for line in order.order_line:
+            wksheet.write(row, 0, line.product_id.name)
+            wksheet.write(row, 1, line.product_uom_qty)
+            wksheet.write(row, 2, line.product_uom.name)
+            wksheet.write(row, 3, line.price_unit)
+            wksheet.write(row, 4, line.price_subtotal)
+            row += 1
+        buffer = BytesIO()
+        wkbook.save(buffer)
+        order.export_file = buffer.getvalue()
+
+        return {
+            'type': 'ir.actions.act_url',
+            'url': f"/web/binary/download_document?model=sale.order&field=export_file&id={order.id}&filename={order.name}.xls",
+            'target': 'self',
+        }
+```
+
+server action在调用的时候并没有带入当前记录的id，因此，我们需要手动在上下文context中获取当前导出事件的记录id，然后利用xlwt写入excel文件。最后，我们返回了一个act_url的动作，该动作的作用是调用我们定义的下载controller，将文件返回给用户。
+
+```python
+from odoo import http
+from odoo.http import request
+from odoo.addons.web.controllers.main import serialize_exception, content_disposition, ensure_db
+
+class Binary(http.Controller):
+    @http.route('/web/binary/download_document', type='http', auth="public")
+    @serialize_exception
+    def download_document(self, model, field, id, filename=None, **kw):
+        """ Download link for files stored as binary fields.
+        :param str model: name of the model to fetch the binary from
+        :param str field: binary field
+        :param str id: id of the record from which to fetch the binary
+        :param str filename: field holding the file's name, if any
+        :returns: :class:`werkzeug.wrappers.Response`
+        """
+        export = request.env[model].sudo().browse(int(id))
+        filecontent = export.export_file
+        if not filecontent:
+            return request.not_found()
+        else:
+            if not filename:
+                filename = '%s_%s' % (model.replace('.', '_'), id)
+            return request.make_response(filecontent,
+                                         [('Content-Type', 'application/octet-stream'),
+                                          ('Content-Disposition', content_disposition(filename))])
+```
+
+这是一个通用的下载controller，方便以后有其他类型的Excel文件需要下载，可以直接调用此接口。有关controller的更多内容，请参考Controller相关章节。
 
 ## todo
 

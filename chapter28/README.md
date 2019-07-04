@@ -15,3 +15,11 @@ _get_default_pivot_view 方法用于生成默认的透视图
 _get_default_kanban_view 方法用于生成默认的看板视图
 _get_default_graph_view 方法用于生成默认的graph视图
 _get_default_calendar_view 方法用于生成默认的日历视图
+
+## Datetime类型转Date 
+
+在视图中可以使DateTime类型的部件表现得像Date一样，只需要在xml中指定部件
+
+```python
+<field name="date" widget="date"/>
+```

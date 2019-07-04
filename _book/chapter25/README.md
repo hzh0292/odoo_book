@@ -28,3 +28,5 @@ t-extend用于扩展Qweb的内容，配合t-operation可以实现xml中position�
 t-jquery指令采用一个CSS selector。此选择器用于扩展模板以选择应用指定的t-operation的上下文节点。
 
 > 如果使用t-extend，odoo会要求你必须写入一个t-jquery选择器，如果想要使用replace的本身节点话，就会冲突。此时，你应该选择放弃使用t-extend，而使用同名的t-name将原有的代码覆盖掉，就像python的后定义的方法会覆盖掉前面定义的方法一样。
+
+另外，如果想要完全重写某个QWeb部件，那么可以不用上面提到的几种操作，直接简单粗暴的定义一个同名的QWeb部件即可，后加载的部件会覆盖掉之前定义的部件。
